@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+#root,body,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  height: 100%;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./images/city.jpg');
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  background-color: lightblue;
+  width: 45%;
+  height: 45%;
   display: flex;
   flex-direction: column;
+  justify-content:center ;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.card:hover{
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.353);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button{
+  color: #164ca7;
+font-size: 17px;
+font-weight: 500;
+letter-spacing: 0.7px;
+}
+.card p{
+  text-align: center;
+}
+  @media only screen and (max-width: 600px) {
+    .card{
+      background-color: lightblue;
+      width: 70%;
+      height: 50%;
+    }
 }
